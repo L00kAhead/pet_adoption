@@ -1,3 +1,6 @@
+import React from "react";
+import { render } from "react-dom";
+
 const Pet = (props) => {
   return React.createElement("div", {}, [
     React.createElement("h2", {}, props.name),
@@ -30,7 +33,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(React.createElement(App), document.getElementById("root"));
-
-// Data Flow -> Parent to Child , unidirectional
-// Pet can't affect App
+render(React.createElement(App), document.getElementById("root"));

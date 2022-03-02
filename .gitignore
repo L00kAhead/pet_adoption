@@ -1,0 +1,7 @@
+node_moduels/
+.parcel-cache/
+dist/
+.env
+.DS_Store
+coverage/
+.vscode/
